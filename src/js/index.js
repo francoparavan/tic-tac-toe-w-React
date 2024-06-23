@@ -6,8 +6,13 @@ import ReactDOM from "react-dom/client";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import App from "./component/App.js";
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+const root = ReactDOM.createRoot(document.getElementById('app'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
